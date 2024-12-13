@@ -1,6 +1,6 @@
 # biblewall : Under construction
 
-A bible wallpaper app built with flutter [![Flutter Logo](https://w7.pngwing.com/pngs/537/866/png-transparent-flutter-hd-logo-thumbnail.png)]() and god 
+A bible wallpaper app built with flutter [![My Skills](https://skillicons.dev/icons?i=flutter)](https://skillicons.dev)  and god 
 
 
 
