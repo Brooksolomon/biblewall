@@ -1,26 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'dart:math';
+import 'models/verse.dart';
+
+
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  final dir = await getApplicationDocumentsDirectory();
-  Hive.defaultDirectory = dir.path;
+  await Hive.initFlutter();
+  Hive.registerAdapter(VerseAdapter());
   runApp(const MyApp());
 }
-class Verse{
-  final String book;
-  final int chapter;
-  final int verse;
-  final String text;
-  
-  Verse({
-    required this.book,
-    required this.chapter,
-    required this.verse,
-    required this.text
-  });
-}
+
+
 
 List<Verse> createVerses() {
   return [
